@@ -198,7 +198,7 @@ public class XmlLoader {
 
         public void characters(char ch[], int start, int length) throws SAXException {
             if (inParam) {
-                param.setValue(new String(ch));
+                param.setValue(new String(ch, start, length));
             }
         }
 
