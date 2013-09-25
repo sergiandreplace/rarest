@@ -18,7 +18,7 @@ public class Service {
 	private HttpVerb verb;
 	private String parent;
 	private boolean defaultParent=false;
-    private String contentType;
+	private String contentType;
 	private List<Param> params=new ArrayList<Param>();
 	private List<Pre> pres=new ArrayList<Pre>();
 	private List<Post> posts=new ArrayList<Post>();
@@ -92,6 +92,7 @@ public class Service {
 		cloned.setVerb(verb);
 		cloned.setDefaultParent(defaultParent);
 		cloned.setParent(parent);
+        cloned.setContentType(contentType);
 		for(Param param:params) {
 			cloned.getParams().add(param.clone());
 		}
@@ -111,6 +112,7 @@ public class Service {
 		result.setName(service.getName());
 		result.setParent(service.getParent());
 		result.setDefaultParent(service.isDefaultParent());
+		result.setContentType(service.getContentType());
 		if (service.getUrl()!=null) {
 			result.setUrl(service.getUrl());
 		}
