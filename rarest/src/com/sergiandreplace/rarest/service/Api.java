@@ -2,10 +2,6 @@ package com.sergiandreplace.rarest.service;
 
 import com.sergiandreplace.rarest.exception.ServiceNotFoundException;
 import com.sergiandreplace.rarest.logger.Logger;
-import org.simpleframework.xml.Attribute;
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
-import org.simpleframework.xml.Root;
 
 import java.util.List;
 

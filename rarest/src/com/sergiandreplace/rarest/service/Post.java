@@ -1,7 +1,5 @@
 package com.sergiandreplace.rarest.service;
 
-import org.simpleframework.xml.Attribute;
-
 public class Post {
 	private String name;
 

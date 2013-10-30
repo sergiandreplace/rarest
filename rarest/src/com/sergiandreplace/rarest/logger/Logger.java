@@ -1,6 +1,5 @@
 package com.sergiandreplace.rarest.logger;
 
-import org.simpleframework.xml.Attribute;
 
 import android.util.Log;
 
@@ -10,7 +9,7 @@ public class Logger {
 		on, off
 	};
 
-	@Attribute(required = false)
+
 	private Boolean show= false;
 
 

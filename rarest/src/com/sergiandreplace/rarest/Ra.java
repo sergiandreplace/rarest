@@ -2,7 +2,10 @@ package com.sergiandreplace.rarest;
 
 import com.sergiandreplace.rarest.engine.Harvester;
 import com.sergiandreplace.rarest.engine.Response;
-import com.sergiandreplace.rarest.exception.*;
+import com.sergiandreplace.rarest.exception.ConfigFileException;
+import com.sergiandreplace.rarest.exception.ParamAliasNotFoundException;
+import com.sergiandreplace.rarest.exception.ServiceNotFoundException;
+import com.sergiandreplace.rarest.exception.ServiceNotLoadedException;
 import com.sergiandreplace.rarest.logger.Logger;
 import com.sergiandreplace.rarest.service.Api;
 import com.sergiandreplace.rarest.service.Service;

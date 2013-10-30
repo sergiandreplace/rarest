@@ -1,7 +1,6 @@
 package com.sergiandreplace.rarest.service;
 
-import org.simpleframework.xml.Attribute;
-import org.simpleframework.xml.Text;
+
 
 import com.sergiandreplace.rarest.logger.Logger;
 

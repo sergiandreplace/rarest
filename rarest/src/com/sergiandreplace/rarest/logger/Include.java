@@ -1,13 +1,10 @@
 package com.sergiandreplace.rarest.logger;
 
-import org.simpleframework.xml.Attribute;
 
 
 public class Include {
 	
-	@Attribute(required=true)
 	private String type;
-	@Attribute(required=false)
 	private Boolean show=true;
 	
 	public String getType() {
