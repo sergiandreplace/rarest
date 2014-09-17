@@ -134,7 +134,7 @@ public class Ra {
 		return executeOnUrl(httpClient, api.getBaseUrl());
 	}
 
-	public Response executeOnUrl(DefaultHttpClient httpClient, String url) {
+	public Response execute(DefaultHttpClient httpClient, String url) {
 		if (service == null) {
 			throw new ServiceNotLoadedException();
 		}
