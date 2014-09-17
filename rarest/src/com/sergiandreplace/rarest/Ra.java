@@ -139,6 +139,15 @@ public class Ra {
 		return harvester.execute(httpClient);
 	}
 
+	public Response execute(DefaultHttpClient httpClient, String baseUrl) {
+		if (service == null) {
+			throw new ServiceNotLoadedException();
+		}
+		Harvester harvester=new Harvester(baseUrl, service);
+		harvester.setLogger(logger);
+		return harvester.execute(httpClient);
+	}
+
 
     public static boolean isLoading() {
         return loading;
