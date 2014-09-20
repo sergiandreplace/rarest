@@ -131,10 +131,14 @@ public class Ra {
 //	}
 
 	public Response execute(DefaultHttpClient httpClient) {
+		return executeOnUrl(httpClient, api.getBaseUrl());
+	}
+
+	public Response execute(DefaultHttpClient httpClient, String url) {
 		if (service == null) {
 			throw new ServiceNotLoadedException();
 		}
-		Harvester harvester=new Harvester(api.getBaseUrl(), service);
+		Harvester harvester=new Harvester(url, service);
 		harvester.setLogger(logger);
 		return harvester.execute(httpClient);
 	}
